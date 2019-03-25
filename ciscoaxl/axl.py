@@ -19,7 +19,7 @@ from suds.xsd.doctor import Import
 from suds.xsd.doctor import ImportDoctor
 
 
-class AXL(object):
+class axl(object):
     """
     The AXL class sets up the connection to the call manager with methods for configuring UCM.
     Tested with environment of;

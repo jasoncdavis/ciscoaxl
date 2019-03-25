@@ -1,6 +1,6 @@
 import sys
 import os
-from ciscoaxlsdk import AXL
+from ciscoaxl import axl
 import json
 
 cucm = os.getenv('cucm', '10.10.20.1')
@@ -11,7 +11,7 @@ version = os.getenv('version', '11.5')
 cwd  = os.path.abspath(os.path.dirname('.'))
 sys.path.append(cwd)
 wsdl = 'file://'+cwd+'/schema/'+version+'/AXLAPI.wsdl'
-ucm = AXL(username=username,password=password,wsdl=wsdl,cucm=cucm,cucm_version=version)
+ucm = axl(username=username,password=password,wsdl=wsdl,cucm=cucm,cucm_version=version)
 
 """
 Users
