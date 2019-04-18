@@ -15,7 +15,7 @@ from ciscoaxl import axl
 cucm = os.getenv('cucm', '10.10.20.1')
 username = os.getenv('username', 'administrator')
 password = os.getenv('password', 'ciscopsdt')
-version = os.getenv('version', '11.5')
+version = os.getenv('version', '12.5')
 
 cwd  = os.path.abspath(os.path.dirname('.'))
 sys.path.append(cwd)
