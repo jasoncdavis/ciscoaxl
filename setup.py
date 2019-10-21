@@ -18,7 +18,7 @@ setup(
     include_package_data=True,
     install_requires = [
     'suds-jurko==0.6',
-    'urllib3==1.23'
+    'urllib3==1.24.2'
     ],
     classifiers=[
         "Programming Language :: Python :: 3",
