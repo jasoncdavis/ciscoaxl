@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name="ciscoaxl",
-    version="0.0.1",
+    version="0.13",
     author="Jeff Levensailor",
     author_email="jeff@levensailor.com",
     description="Cisco CUCM AXL Library. Simple to use.",
@@ -15,10 +15,19 @@ setup(
     url="https://github.com/levensailor/ciscoaxlsdk",
     keywords=['Cisco', 'Call Manager', 'CUCM', 'AXL', 'VoIP'],
     packages=['ciscoaxl'],
+    package_data={
+        'ciscoaxl': [
+            '*.wsdl',
+            '*.xsd',
+            'schema/*/*'
+        ],
+    },
     include_package_data=True,
     install_requires = [
-    'suds-jurko==0.6',
-    'urllib3==1.24.2'
+    'zeep==3.4.0',
+    'urllib3==1.23',
+    'requests==2.22.0',
+    'six==1.12.0'
     ],
     classifiers=[
         "Programming Language :: Python :: 3",
